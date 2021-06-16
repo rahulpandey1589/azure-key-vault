@@ -1,4 +1,5 @@
 ﻿using Core;
+using Core.Common;
 using System;
 
 namespace Client
@@ -8,11 +9,11 @@ namespace Client
         static void Main(string[] args)
         {
           
-            KeyVault.GetSecret(Core.EnvironmentEnum.Development,"");
+            KeyVault.GetSecret(EnvironmentEnum.Development,"");
 
 
 
-            KeyVault.GetSecret(Core.EnvironmentEnum.Development, "");
+            KeyVault.GetSecret(EnvironmentEnum.Development, "");
 
             Console.WriteLine("Hello World!");
         }
